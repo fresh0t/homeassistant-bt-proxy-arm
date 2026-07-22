@@ -1,0 +1,19 @@
+<!--
+  Add this element inside the <devices> section of the HAOS VM.
+  Run: virsh edit haos
+
+  This creates:
+    Host:  /run/bt-hci-proxy.sock  (UNIX socket)
+    VM:    /dev/ttyAMA1  (second serial port)
+
+  Note: Uses a serial port (not virtio-serial) because btattach
+  requires a tty device that supports termios ioctls.
+  ARM soc doesn't has a ISA bus, use pl011 instead.
+-->
+
+<serial type='unix'>
+  <source mode='bind' path='/run/bt-hci-proxy.sock'/>
+  <target type='system-serial' port='1'>
+    <model name='pl011'/>
+  </target>
+</serial>
