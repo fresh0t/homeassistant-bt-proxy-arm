@@ -1,3 +1,10 @@
+> [!NOTE]
+> The `main` branch contains metadata that differs from the original repository to avoid conflicts.
+> By clicking the button below, you'll add **my fork** of this add-on rather than the original.
+> Future updates are not guaranteed.
+> Once https://github.com/nlothian/homeassistant-bt-proxy/pull/6 is merged, you should switch back to the original add-on.
+
+
 # bt-proxy: Bluetooth HCI Proxy for Virtualized Home Assistant
 
 A proxy that forwards Bluetooth HCI packets from a Linux host's Bluetooth adapter to a Home Assistant OS (HAOS) VM, enabling full Bluetooth support without USB passthrough.
@@ -165,7 +172,7 @@ If this repo is hosted on GitHub, add it as a custom add-on repository:
 
 1. Go to **Settings > Add-ons > Add-on Store**
 2. Click the three-dot menu > **Repositories**
-3. Add the repository URL (e.g. `https://github.com/nlothian/homeassistant-bt-proxy`)
+3. Add the repository URL (e.g. `https://github.com/tianq02/homeassistant-bt-proxy-arm`)
 4. Find **BT HCI Proxy** and install it
 
 The add-on defaults to `/dev/ttyS1` with protocol `h4` and passive scanning enabled. These can be changed in the add-on's **Configuration** tab if needed.
