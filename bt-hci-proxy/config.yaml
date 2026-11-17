@@ -1,5 +1,5 @@
 name: "BT HCI Proxy arm"
-version: "0.1.1"
+version: "0.1.2"
 slug: "bt-hci-proxy-arm"
 description: "Attaches a Bluetooth HCI UART device (btattach) for use with the bt-proxy host-side service"
 url: "https://github.com/fresh0t/homeassistant-bt-proxy-arm"
